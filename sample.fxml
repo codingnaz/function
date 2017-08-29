@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="307.0" prefWidth="643.0">
+         <children>
+            <TextField fx:id="input" prefHeight="38.0" prefWidth="300.0" promptText="put integer between 1 to 100" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets right="150.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+            <Label text="Enter any number fron 0 to 100" />
+            <Label text="for calculating 2i/(2i+1)" />
+            <Button fx:id="calculate1" mnemonicParsing="false" onAction="#pressButton" text="calculate">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin></Button>
+            <Label fx:id="answer" text="Welcome to my program" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="50.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</Pane>
